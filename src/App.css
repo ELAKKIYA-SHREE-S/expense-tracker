@@ -185,6 +185,7 @@ input[type='number'] {
     font-size: 24px;
     margin-left: 4%;
     color: #000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
   .money,
