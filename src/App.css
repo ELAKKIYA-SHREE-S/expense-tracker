@@ -124,6 +124,7 @@ input[type='number'] {
 .delete-btn:focus {
   outline: 0;
 }
+
 .list {
   list-style-type: none;
   padding: 0;
