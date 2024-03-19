@@ -5,14 +5,18 @@ import { Balance } from "./components/Balance";
 import { IncomeExpenses } from "./components/IncomeExpenses";
 import { TransactionList } from "./components/TransactionList";
 import { AddTransaction } from "./components/AddTransaction";
-
 import { GlobalProvider } from "./context/GlobalState";
+import gif from "./videos and images/et.gif";
 
 function App() {
   return (
     <GlobalProvider>
+    <div className="cover">
+      <div className="img-con">
+        <img src={gif} alt="Animated GIF" />
+      </div>
       <div className="container">
-      <Header />
+        <Header />
         <div className="con-wrapper">
           <div className="con1">
             <Balance />
@@ -26,6 +30,7 @@ function App() {
           </div>
         </div>
       </div>
+    </div>
     </GlobalProvider>
   );
 }

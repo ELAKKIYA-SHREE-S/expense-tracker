@@ -1,21 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('./videos and images/img.jpg');
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position:top;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #477e8f;
+  justify-content: space-between;
+  background-image: linear-gradient(to left, #f494e3, #85f9a8);
+  background-size: cover;
+  height: 100vh;
 }
-
-.container {
+.cover {
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-left: 50%;
+  width: 100%;
 }
-
+.img-con {
+  width: 50%;
+  display: flex;
+  margin-top: -20%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.img-con img {
+  width: 100%;
+}
+.container {
+  width: 50%;
+  justify-content: center;
+  align-items: center; 
+  padding-left: 20px;
+  box-sizing: border-box;
+}
 .con-wrapper {
   flex: 1;
   margin: 0 5%;
@@ -34,7 +48,7 @@ h2 {
   font-size: 40px;
   margin-left: 4.5%;
   font-family: cursive;
-  color: #fff;
+  color: #000;
 }
 
 h3 {
@@ -105,19 +119,21 @@ input[type='number'] {
   display: block;
   font-size: 16px;
   padding: 10px;
-  width: 75%;
+  width: 90%;
 }
 
 .btn {
   cursor: pointer;
-  background-color: #2d8ff8;
+  background-color: #0a79f0;
   color: #fff;
+  border-width: 5px;
+  border-radius: 50px;
   display:block;
   font-size: 16px;
   margin: 10px 0 10px;
-  margin-left: 15%;
+  margin-left: 35%;
   padding: 10px;
-  width: 50%;
+  width: 30%;
 }
 
 .btn:focus,
@@ -169,12 +185,21 @@ input[type='number'] {
 
 @media (max-width: 768px) {
   body{
-    background-image: url('./videos and images/img2.avif');
-    background-size:cover;
+    background-image: linear-gradient(to left, #f494e3, #85f9a8);
+    background-size: cover;
+  }
+  .cover {
+      flex-direction: column;
+  }
+  
+  .img-con {
+      width: 100%;
+      margin-top: 0;
+      padding-right: 0;
   }
   .container {
-    width: 100%;
-    margin: 0;
+      width: 100%;
+      padding-left: 0;
   }
 
   .con-wrapper {
@@ -185,11 +210,7 @@ input[type='number'] {
     font-size: 24px;
     margin-left: 4%;
     color: #000;
-<<<<<<< HEAD
-    font-family:Georgia, 'Times New Roman', Times, serif;
-=======
     font-family: Georgia, 'Times New Roman', Times, serif;
->>>>>>> 9fa930a333e10d181fa414d5aa911673226d2592
   }
 
   .money,
@@ -200,6 +221,7 @@ input[type='number'] {
 
   .btn {
     width: 50%;
+    margin-left: 25%;
   }
 
   .pie-chart-container {

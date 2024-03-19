@@ -53,7 +53,7 @@ export const AddTransaction = () => {
   return (
     <>
     {msg ? <div style={{ color: '#03ac13', fontWeight: 'bold', fontStyle: 'italic', fontSize: '25px' }}>{msg}</div>:null}
-      <h3>Add new transaction</h3>
+      <h3>ADD NEW TRANSACTION</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
           <label htmlFor="text">Text</label>
@@ -67,8 +67,7 @@ export const AddTransaction = () => {
         </div>
         <div className="form-control">
           <label htmlFor="amount">
-            Amount <br />
-            (negative - expense, positive - income)
+            Amount (Expense(-) , Income(+))
           </label>
           {amountError ? <div style={{ color: 'red', fontWeight: 'bold', fontStyle: 'italic' }}>{amountError}</div>:null}
           <input
@@ -78,7 +77,7 @@ export const AddTransaction = () => {
             placeholder="Enter amount..."
           />
         </div>
-        <button className="btn">Add transaction</button>
+        <button className="btn">Add Transaction</button>
       </form>
     </>
   );
